@@ -23,7 +23,6 @@ extension TwoSection {
         TwoSection(image: "Two3"),
         TwoSection(image: "Two4"),
         TwoSection(image: "Two5"),
-        TwoSection(image: "Two5"),
         TwoSection(image: "Two6"),
         TwoSection(image: "Two7"),
         TwoSection(image: "Two8")

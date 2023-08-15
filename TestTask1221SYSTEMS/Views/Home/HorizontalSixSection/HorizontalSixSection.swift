@@ -17,6 +17,7 @@ struct HorizontalSixSection: View {
             Text("Сладкое настроение")
                 .font(.system(size: 19))
                 .fontWeight(.bold)
+                .padding([.leading, .top], 10)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows) {
                     ForEach(dataModel.info, id:\.id) { item in
@@ -57,6 +58,21 @@ struct HorizontalSixSection: View {
                                     })
                                 }.frame(width: 140)
                             }
+                            if item.oldPrice != nil {
+                                ZStack(){
+                                    Rectangle()
+                                        .frame(width: 90, height: 17)
+                                        .foregroundColor(.red.opacity(0.6))
+                                        .cornerRadius(35)
+                                        .shadow(radius: 3)
+                                        .padding(2)
+                                    Text("Удар по ценам")
+                                        .font(.system(size: 11))
+                                        .foregroundColor(.white)
+                                }.frame(maxWidth: .infinity, alignment: .leading)
+                                .frame(height: 188, alignment: .top)
+                                 .padding(.leading, 7)
+                            }
                         } .onAppear {
                             if dataModel.info.last == item {
                                 loadMoreContent()
@@ -64,8 +80,9 @@ struct HorizontalSixSection: View {
                         }
                     }
                 } .frame(height: 190)
+                    .padding([.leading, .trailing, .top], 10)
             }
-        } .padding([.leading, .trailing, .top], 10)
+        }
     }
     func loadMoreContent() {
         let newItems = SixSection.info
