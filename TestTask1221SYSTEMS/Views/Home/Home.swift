@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct Home: View {
-    
-    
+
     @State private var showingCity = false
-    
+    @State private var selectedCity = "Москва, Москва и московская область"
+
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: true){
@@ -40,14 +40,14 @@ struct Home: View {
                     Image(systemName: "location.circle.fill")
                         .foregroundColor(.red)
                         .font(.system(size: 10))
-                    Text("Москва, Москва и московская область")
+                    Text(selectedCity)
                         .foregroundColor(.black)
                         .font(.system(size: 15))
-                }
+                } .frame(maxWidth: .infinity,alignment: .leading)
                 .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
-                .frame(width: 320)
+                .frame(width: 320, height: 20)
             }).sheet(isPresented: $showingCity) {
-                CityList()
+                CityList(selectedCity: $selectedCity)
             }
                 .foregroundColor(.black)
                 .background(Capsule().stroke(.gray, lineWidth: 1))

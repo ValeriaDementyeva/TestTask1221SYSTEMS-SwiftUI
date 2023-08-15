@@ -24,10 +24,10 @@ struct SixSection: Identifiable, Hashable {
 
 extension SixSection {
     static let info = [
-        SixSection(image: "Six1", price: 359.90, oldPrice: 550.90),
+        SixSection(image: "Six1", price: 550.90, oldPrice: nil),
         SixSection(image: "Six2", price: 359.90, oldPrice: 550.90),
         SixSection(image: "Six3", price: 359.90, oldPrice: 550.90),
-        SixSection(image: "Six4", price: 359.90, oldPrice: 550.90),
+        SixSection(image: "Six4", price: 550.90, oldPrice: nil),
         SixSection(image: "Six5", price: 359.90, oldPrice: 550.90),
         SixSection(image: "Six6", price: 89.37, oldPrice: nil),
         SixSection(image: "Six7", price: 69, oldPrice: nil),
