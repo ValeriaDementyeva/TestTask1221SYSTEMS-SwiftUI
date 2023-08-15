@@ -5,7 +5,6 @@
 //  Created by Валерия Дементьева on 14.08.2023.
 //
 
-import SwiftUI
 import Foundation
 
 class ObserveFourSection: ObservableObject {
@@ -20,13 +19,13 @@ struct FourSection: Identifiable, Hashable {
 
 extension FourSection {
     static let info = [
-        FourSection(image: "1", text: "Абонемент на кофе"),
-        FourSection(image: "1", text: "Мои скидки"),
-        FourSection(image: "1", text: "Карта в подарок"),
-        FourSection(image: "1", text: "Доставка за 1 час"),
-        FourSection(image: "1", text: "SPAR Wine"),
-        FourSection(image: "1", text: "Списки покупок"),
-        FourSection(image: "1", text: "Доставка"),
-        FourSection(image: "1", text: "Закажи и забери")
-        ]
+        FourSection(image: "Four1", text: "Абонемент на кофе"),
+        FourSection(image: "Four2", text: "Мои скидки"),
+        FourSection(image: "Four3", text: "Карта в подарок"),
+        FourSection(image: "Four4", text: "Доставка за 1 час"),
+        FourSection(image: "Four5", text: "SPAR Wine"),
+        FourSection(image: "Four8", text: "Списки покупок"),
+        FourSection(image: "Four6", text: "Обратная связь"),
+        FourSection(image: "Four7", text: "На пикник")
+    ]
 }

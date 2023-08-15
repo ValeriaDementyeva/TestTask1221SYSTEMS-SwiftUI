@@ -8,33 +8,31 @@
 import SwiftUI
 
 struct Home: View {
-
-
+    
+    
     @State private var showingCity = false
-
+    
     var body: some View {
         NavigationView {
-            ScrollView(){
-                VStack {
+            ScrollView(showsIndicators: true){
+                LazyVStack {
                     HorizontalOneSection()
                     HorizontalTwoSection()
                     HorizontalThreeSection()
                     HorizontalFourSection()
                     HorizontalFiveSection()
-                    HorizontalFiveSection()
+                    HorizontalSixSection()
                 }
             }
             .navigationBarItems(trailing:
                                     NavigationLink(
-                                        // переход на ListModel
-                                        destination: ListModel()
-                                        //не скрыл кнопку назад
+                                        destination: MenuLeft()
                                             .navigationBarBackButtonHidden(true),
                                         label: {
                                             Image(systemName: "list.bullet")
                                                 .foregroundColor(.green)
                                         }))
-
+            
             .navigationBarItems(leading: Button(action:{
                 self.showingCity.toggle()},
                                                 label: {
@@ -49,7 +47,7 @@ struct Home: View {
                 .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
                 .frame(width: 320)
             }).sheet(isPresented: $showingCity) {
-                CityModel()
+                CityList()
             }
                 .foregroundColor(.black)
                 .background(Capsule().stroke(.gray, lineWidth: 1))

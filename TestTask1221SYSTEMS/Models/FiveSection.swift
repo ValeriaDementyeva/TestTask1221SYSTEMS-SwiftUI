@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
-import Foundation
 
 class ObserveFiveSection: ObservableObject {
     @Published var info = FiveSection.info
@@ -15,25 +13,25 @@ class ObserveFiveSection: ObservableObject {
 
 struct FiveSection: Identifiable, Hashable {
     let image: String
-    let price: Int
-    let oldPrice: Int?
+    let price: Double
+    let oldPrice: Double?
     let text: String = "р/шт"
     var id = UUID()
+
+    
 }
 
 extension FiveSection {
     static let info = [
-        FiveSection(image: "3", price: 239, oldPrice: 340),
-        FiveSection(image: "4", price: 39, oldPrice: nil),
-        FiveSection(image: "5", price: 23, oldPrice: nil),
-        FiveSection(image: "6", price: 29, oldPrice: nil),
-        FiveSection(image: "7", price: 79, oldPrice: 100),
-        FiveSection(image: "8", price: 29, oldPrice: nil),
-        FiveSection(image: "3", price: 69, oldPrice: nil),
-        FiveSection(image: "4", price: 27, oldPrice: nil),
-        FiveSection(image: "5", price: 59, oldPrice: nil),
-        FiveSection(image: "6", price: 139, oldPrice: nil),
-        FiveSection(image: "7", price: 267, oldPrice: nil),
-        FiveSection(image: "8", price: 98, oldPrice: nil)
-        ]
+        FiveSection(image: "Five1", price: 69.90, oldPrice: 100.90),
+        FiveSection(image: "Five2", price: 88.00, oldPrice: 94.00),
+        FiveSection(image: "Five3", price: 189.00, oldPrice: nil),
+        FiveSection(image: "Five4", price: 79.99, oldPrice: nil),
+        FiveSection(image: "Five5", price: 789.90, oldPrice: 1000.89),
+        FiveSection(image: "Five6", price: 229.37, oldPrice: nil),
+        FiveSection(image: "Five7", price: 69, oldPrice: nil),
+        FiveSection(image: "Five8", price: 207, oldPrice: 353)
+    ]
 }
+
+

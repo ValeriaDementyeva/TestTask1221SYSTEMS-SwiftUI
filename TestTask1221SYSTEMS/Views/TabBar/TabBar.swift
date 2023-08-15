@@ -11,45 +11,30 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
-            // Создаем TabBar с тремя кнопками
             TabView {
-                // Отобоажение экрана Медиатека
                 Home()
-                // Создание первой кнопки в TabBar
                     .tabItem {
                         Image(systemName: "homekit")
                         Text("Главная")
                     }
-
-                // Отобоажение экрана РАДИО
                 Catalog()
-
-                // Создание второй кнопки в TabBar
                     .tabItem {
                         Image(systemName: "square.grid.2x2")
                         Text("Каталог")
                     }
-
-                // Отобоажение экрана ПОИСК с текстом
                 Basket()
-                // Создание третьей кнопки в TabBar
                     .tabItem {
                         Image(systemName: "cart")
                         Text("Корзина")
                     }
-
                 Profile()
-                // Создание третьей кнопки в TabBar
                     .tabItem {
                         Image(systemName: "person")
                         Text("Профиль")
                     }
-
             }
-            //Модификатор цвета нажатых кнопок TabBar
             .accentColor(.green)
         })
-
     }
 }
 

@@ -5,7 +5,6 @@
 //  Created by Валерия Дементьева on 14.08.2023.
 //
 
-import SwiftUI
 import Foundation
 
 class ObserveTwoSection: ObservableObject {
@@ -19,13 +18,14 @@ struct TwoSection: Identifiable, Hashable {
 
 extension TwoSection {
     static let info = [
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1"),
-        TwoSection(image: "1")
+        TwoSection(image: "Two1"),
+        TwoSection(image: "Two2"),
+        TwoSection(image: "Two3"),
+        TwoSection(image: "Two4"),
+        TwoSection(image: "Two5"),
+        TwoSection(image: "Two5"),
+        TwoSection(image: "Two6"),
+        TwoSection(image: "Two7"),
+        TwoSection(image: "Two8")
     ]
 }

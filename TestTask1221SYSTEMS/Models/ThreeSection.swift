@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class ObserveThreeSection: ObservableObject {
     @Published var info = ThreeSection.info
 }
@@ -15,11 +14,12 @@ class ObserveThreeSection: ObservableObject {
 struct ThreeSection: Identifiable, Hashable {
     let image: String
     let countBonus: Int
+    let bonus = "бонусов"
     var id = UUID()
 }
 
 extension ThreeSection {
     static let info = [
-        ThreeSection(image: "rap", countBonus: 0),
+        ThreeSection(image: "QR", countBonus: 0)
     ]
 }
