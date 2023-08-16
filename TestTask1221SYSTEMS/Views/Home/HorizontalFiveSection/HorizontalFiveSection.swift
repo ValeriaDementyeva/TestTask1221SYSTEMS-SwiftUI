@@ -61,17 +61,19 @@ struct HorizontalFiveSection: View {
                             if item.oldPrice != nil {
                                 ZStack(){
                                     Rectangle()
-                                        .frame(width: 90, height: 17)
+                                        .frame(width: 93, height: 21)
                                         .foregroundColor(.red.opacity(0.6))
-                                        .cornerRadius(35)
+                                        .cornerRadius(6, corners: [.topRight, .bottomRight])
+                                        .cornerRadius(15, corners: [.topLeft])
                                         .shadow(radius: 3)
-                                        .padding(2)
+                                        .padding(1)
                                     Text("Удар по ценам")
                                         .font(.system(size: 11))
                                         .foregroundColor(.white)
+                                        .padding(.leading, 1)
                                 }.frame(maxWidth: .infinity, alignment: .leading)
-                                .frame(height: 188, alignment: .top)
-                                 .padding(.leading, 7)
+                                .frame(height: 187, alignment: .top)
+                                 .padding(.leading, 1)
                             }
                         }.onAppear {
                             if dataModel.info.last == item {
@@ -88,6 +90,7 @@ struct HorizontalFiveSection: View {
         dataModel.info.insert(contentsOf: newItems, at: 0)
     }
 }
+
 
 struct HorizontalFiveSection_Previews: PreviewProvider {
     static var previews: some View {

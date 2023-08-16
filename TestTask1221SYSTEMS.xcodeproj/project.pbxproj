@@ -32,7 +32,7 @@
 		4DB0B8732A8AC12B006DFC6B /* FiveSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0B8722A8AC12B006DFC6B /* FiveSection.swift */; };
 		4DD839912A8BA4A800F82D67 /* SixSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD839902A8BA4A800F82D67 /* SixSection.swift */; };
 		4DD839932A8BA4C300F82D67 /* HorizontalSixSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD839922A8BA4C300F82D67 /* HorizontalSixSection.swift */; };
-		4DD839952A8BB7D600F82D67 /* ExtensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD839942A8BB7D600F82D67 /* ExtensionDouble.swift */; };
+		4DD839952A8BB7D600F82D67 /* ExtensionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD839942A8BB7D600F82D67 /* ExtensionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 		4DB0B8722A8AC12B006DFC6B /* FiveSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSection.swift; sourceTree = "<group>"; };
 		4DD839902A8BA4A800F82D67 /* SixSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixSection.swift; sourceTree = "<group>"; };
 		4DD839922A8BA4C300F82D67 /* HorizontalSixSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSixSection.swift; sourceTree = "<group>"; };
-		4DD839942A8BB7D600F82D67 /* ExtensionDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDouble.swift; sourceTree = "<group>"; };
+		4DD839942A8BB7D600F82D67 /* ExtensionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			children = (
 				4DB0B83C2A8A5503006DFC6B /* TestTask1221SYSTEMSApp.swift */,
 				4DB0B83E2A8A5503006DFC6B /* ContentView.swift */,
-				4DD839942A8BB7D600F82D67 /* ExtensionDouble.swift */,
+				4DD839942A8BB7D600F82D67 /* ExtensionType.swift */,
 				4DB0B84A2A8A556C006DFC6B /* Models */,
 				4DB0B84B2A8A558D006DFC6B /* Views */,
 				4DB0B8402A8A5504006DFC6B /* Assets.xcassets */,
@@ -324,7 +324,7 @@
 				4DB0B85E2A8A5728006DFC6B /* Profile.swift in Sources */,
 				4DB0B8672A8AB254006DFC6B /* CityInfo.swift in Sources */,
 				4DB0B8502A8A5605006DFC6B /* TabBar.swift in Sources */,
-				4DD839952A8BB7D600F82D67 /* ExtensionDouble.swift in Sources */,
+				4DD839952A8BB7D600F82D67 /* ExtensionType.swift in Sources */,
 				4D5F69B42A8ACD4900C80037 /* ThreeSection.swift in Sources */,
 				4DB0B8612A8A69CF006DFC6B /* MenuLeft.swift in Sources */,
 				4D5F69B22A8ACD1B00C80037 /* TwoSection.swift in Sources */,
