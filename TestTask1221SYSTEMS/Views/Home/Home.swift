@@ -45,7 +45,7 @@ struct Home: View {
                         .font(.system(size: 15))
                 } .frame(maxWidth: .infinity,alignment: .leading)
                 .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
-                .frame(width: 320, height: 20)
+                .frame(width: 305, height: 22)
             }).sheet(isPresented: $showingCity) {
                 CityList(selectedCity: $selectedCity)
             }
