@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0A51162A8CDB74007902DF /* LaunchScreenSpar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A51152A8CDB74007902DF /* LaunchScreenSpar.storyboard */; };
 		4D5F69B22A8ACD1B00C80037 /* TwoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F69B12A8ACD1B00C80037 /* TwoSection.swift */; };
 		4D5F69B42A8ACD4900C80037 /* ThreeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F69B32A8ACD4900C80037 /* ThreeSection.swift */; };
 		4D5F69B72A8ACDB400C80037 /* HorizontalTwoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F69B62A8ACDB400C80037 /* HorizontalTwoSection.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0A51152A8CDB74007902DF /* LaunchScreenSpar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenSpar.storyboard; sourceTree = "<group>"; };
 		4D5F69B12A8ACD1B00C80037 /* TwoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSection.swift; sourceTree = "<group>"; };
 		4D5F69B32A8ACD4900C80037 /* ThreeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSection.swift; sourceTree = "<group>"; };
 		4D5F69B62A8ACDB400C80037 /* HorizontalTwoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTwoSection.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				4DB0B84A2A8A556C006DFC6B /* Models */,
 				4DB0B84B2A8A558D006DFC6B /* Views */,
 				4DB0B8402A8A5504006DFC6B /* Assets.xcassets */,
+				4D0A51152A8CDB74007902DF /* LaunchScreenSpar.storyboard */,
 				4DB0B8422A8A5504006DFC6B /* Preview Content */,
 			);
 			path = TestTask1221SYSTEMS;
@@ -297,6 +300,7 @@
 			files = (
 				4DB0B8442A8A5504006DFC6B /* Preview Assets.xcassets in Resources */,
 				4DB0B8412A8A5504006DFC6B /* Assets.xcassets in Resources */,
+				4D0A51162A8CDB74007902DF /* LaunchScreenSpar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +469,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenSpar.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,6 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenSpar.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
